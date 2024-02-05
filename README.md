@@ -3,7 +3,7 @@
 ## Streamlit 활용한 데모 페이지
 
 ![마크클라우드](./public/imgs/demo_sample.png)<br>
-**[CV] 마크클라우드 도형코드 인식 서비스**
+**도형코드 인식 서비스 데모 페이지 예시 이미지**
 
 ## ⚙ 사용환경
 <!-- <img src=https://img.shields.io/badge/{배지이름}-{css컬러}?style={스타일}&logo={로고}&logoColor={로고컬러}> -->
