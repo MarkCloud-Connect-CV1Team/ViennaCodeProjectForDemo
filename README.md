@@ -1,52 +1,20 @@
 #  👑 Vienna Code Project For Demo👑
 
-Streamlit 사용한 데모페이지 코드
+## 📰 Streamlit 활용한 데모 페이지
 
-## 주제
-![마크클라우드](./public/imgs/corp_logo.png)<br>
-**[CV] 마크클라우드 도형코드 인식 서비스**
-
-
-
-
-## 문제정의
-Object Detection
+![데모페이지](./public/imgs/demo_sample.png)
 
 ## ⚙ 사용환경
 <!-- <img src=https://img.shields.io/badge/{배지이름}-{css컬러}?style={스타일}&logo={로고}&logoColor={로고컬러}> -->
-<img src="https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=white">
-
-<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white">
+<img src="https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"> <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
 
 ## 🛠 사용기술
-<img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/Numpy-013243?style=plastic&logo=Numpy&logoColor=white"> <img src="https://img.shields.io/badge/Pandas-150458?style=plastic&logo=Pandas&logoColor=white"> <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=plastic&logo=ScikitLearn&logoColor=white"> <img src="https://img.shields.io/badge/Pytorch-EE4C2C?style=plastic&logo=Pytorch&logoColor=white"> 
+<img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/Pytorch-EE4C2C?style=plastic&logo=Pytorch&logoColor=white"> <img src="https://img.shields.io/badge/Stremlit-%23D00000.svg?style=plastic&logo=Streamlit&logoColor=white">
 
 ## 📅 기간
 2023.12.26 ~ 2024.02.08
 
-
-##  ✍ 평가지표
-(임시) mAP IoU Threshold(=0.5) 
-
-목표
-
-![평가](./public/imgs/evaluation.png)
-
-- mAP 값 0.8 달성을 목표로 함 (기존의 프로덕트는 0.7으로 해당 값을 기준값으로 정함)
-
-- mAP의 측정 방식
-    - 분류된 도형코드 모두가 정답 도형코드에 포함되어야 통과
-        
-        i.e.
-        
-        분류된 도형코드: **050711, 050103, 020117**, 010201, 140102
-        
-        정답 도형코드: **050711, 050103, 020117**
-        
-        → 정답 050711, 050103, 020117 모두가 분류 코드 내에 포함됨으로 통과
-
-
-##  🔔 컨벤션 규칙
+## 🔔 컨벤션 규칙
 
 ### 주로 사용하는 태그
 
@@ -82,4 +50,5 @@ Object Detection
 
 
 ## References
-[(예시) YOLOv8 깃허브 주소](https://github.com/ultralytics/ultralytics)
+[YOLOv8 Predict 문서](https://docs.ultralytics.com/ko/modes/predict/) <br/>
+[Streamlit YOLOv8 깃허브](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking)
