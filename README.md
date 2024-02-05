@@ -51,5 +51,5 @@
 
 
 ## References
-[YOLOv8 Predict 문서](https://docs.ultralytics.com/ko/modes/predict/)
+[YOLOv8 Predict 문서](https://docs.ultralytics.com/ko/modes/predict/) <br/>
 [Streamlit YOLOv8 깃허브](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking)
