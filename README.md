@@ -1,8 +1,8 @@
 #  👑 Vienna Code Project For Demo👑
 
-## Streamlit 활용한 데모 페이지
+## 📰 Streamlit 활용한 데모 페이지
 
-![마크클라우드](./public/imgs/demo_sample.png)<br>
+![데모페이지](./public/imgs/demo_sample.png)<br>
 **비엔나 코드 인식 서비스 데모 페이지 예시 이미지**
 
 ## ⚙ 사용환경
@@ -15,7 +15,7 @@
 ## 📅 기간
 2023.12.26 ~ 2024.02.08
 
-##  🔔 컨벤션 규칙
+## 🔔 컨벤션 규칙
 
 ### 주로 사용하는 태그
 
