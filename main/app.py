@@ -9,6 +9,9 @@ import streamlit as st
 import settings
 import helper
 
+# save image
+import uuid
+
 # Setting page layout
 st.set_page_config(
     page_title="비엔나 코드 인식 서비스",
@@ -78,10 +81,11 @@ if source_radio == settings.IMAGE:
         else:
             if st.sidebar.button('Detect Objects'):
                 res = model.predict(uploaded_image,
-                                    conf=confidence
+                                    conf=confidence,
                                     )
                 boxes = res[0].boxes
                 res_plotted = res[0].plot()[:, :, ::-1]
+                
                 st.image(res_plotted, caption='Detected Image',
                          use_column_width=True)
                 try:
@@ -127,9 +131,12 @@ if source_radio == settings.IMAGE:
                                     st.write(f"{class_code} : {explanation}")
                                 else:
                                     st.write(f"Unknown class index: {class_index}")
+                    # save results
+                    helper.save_detection_results(res[0], source_img)
                 except Exception as ex:
                     # st.write(ex)
                     st.write("No image is uploaded yet!")
+
 
 
 else:

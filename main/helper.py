@@ -2,7 +2,10 @@ from ultralytics import YOLO
 import time
 import streamlit as st
 import cv2
-
+import PIL
+import uuid
+from datetime import datetime
+import pytz
 import settings
 
 
@@ -53,3 +56,24 @@ def _display_detected_frames(conf, model, st_frame, image, is_display_tracking=N
     else:
         # Predict the objects in the image using the YOLOv8 model
         res = model.predict(image, conf=conf)
+        
+        
+        
+# save result
+def save_detection_results(result, uploaded_image):
+    try:
+        result.save_txt('./save/result.txt', save_conf=True)
+        result.tojson('./save/result.json')	
+        im_array = result.plot()
+        im = PIL.Image.fromarray(im_array[:, :, ::-1])
+        # saved_image_path = f'./save/{uuid.uuid4()}_{str(uploaded_image.name)}'
+        # 현재 날짜와 시간을 이용하여 파일명 생성
+        korea_timezone = pytz.timezone('Asia/Seoul')
+        current_time = datetime.now(korea_timezone).strftime("%Y%m%d_%Hh%Mm%Ss")
+        saved_image_path = f'./save/{current_time}_{str(uploaded_image.name)}'
+
+        im.save(saved_image_path)
+        st.success("Detection results saved successfully!")
+    except Exception as ex:
+        st.error("Error occurred while saving detection results.")
+        st.error(ex)
