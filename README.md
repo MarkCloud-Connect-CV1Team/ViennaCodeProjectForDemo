@@ -2,7 +2,7 @@
 
 ## Streamlit 활용한 데모 페이지
 
-![마크클라우드](./public/imgs/corp_logo.png)<br>
+![마크클라우드](./public/imgs/demo_sample.png)<br>
 **[CV] 마크클라우드 도형코드 인식 서비스**
 
 ## ⚙ 사용환경
