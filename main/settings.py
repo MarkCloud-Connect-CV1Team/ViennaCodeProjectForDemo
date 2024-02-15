@@ -27,7 +27,7 @@ DEFAULT_DETECT_IMAGE = IMAGES_DIR / 'sample_detected.jpg'
 
 
 # ML Model config
-CLASS_SIZE = 'class392' # [option] select class folder among class1 class9,class392
+CLASS_SIZE = 'class9' # [option] select class folder among class1 class9,class392
 MODEL_DIR = ROOT  /'weights' / CLASS_SIZE
 DETECTION_MODEL = MODEL_DIR / 'best.pt'
 # In case of your custome model comment out the line above and
